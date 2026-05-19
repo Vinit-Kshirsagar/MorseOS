@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
-import 'features/transmitter/view/transmitter_screen.dart';
+import 'app_shell.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,10 +13,10 @@ class MorseOSApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title:        'MorseOS',
+      title:                      'MorseOS',
       debugShowCheckedModeBanner: false,
-      theme:        AppTheme.dark,
-      home:         const TransmitterScreen(),
+      theme:                      AppTheme.dark,
+      home:                       const AppShell(),
     );
   }
 }

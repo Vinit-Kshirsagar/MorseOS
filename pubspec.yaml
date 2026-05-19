@@ -1,6 +1,7 @@
 name: morseos
-description: MorseOS — Morse Signal Transmitter
+description: "MorseOS — Offline Morse code signal transmitter and receiver."
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
@@ -9,12 +10,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # State management
   flutter_bloc: ^8.1.5
-  equatable: ^2.0.5
-  torch_light: ^1.0.0
-  just_audio: ^0.9.38
+  equatable:    ^2.0.5
+
+  # Transmitter hardware
+  torch_light:   ^1.0.0
+  just_audio:    ^0.9.38
   path_provider: ^2.1.3
+
+  # UI
   google_fonts: ^6.2.1
+
+  # Receiver hardware
+  camera: ^0.12.0+1
+  permission_handler: ^12.0.1
 
 dev_dependencies:
   flutter_test:
